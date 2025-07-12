@@ -30,7 +30,7 @@ export default function Hero() {
 
             
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-4"
-                style={{ fontFamily: 'Inter, -apple-system, BlinkMacSystemFont, sans-serif' }}>
+                style={{ fontFamily: 'Plus Jakarta Sans, Inter, -apple-system, BlinkMacSystemFont, sans-serif' }}>
               Anup Tiwari
             </h1>
 
@@ -40,7 +40,7 @@ export default function Hero() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4, duration: 0.8 }}
               className="text-base md:text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed max-w-lg mx-auto font-medium"
-              style={{ fontFamily: 'Inter, -apple-system, BlinkMacSystemFont, sans-serif' }}
+              style={{ fontFamily: 'Plus Jakarta Sans, Inter, -apple-system, BlinkMacSystemFont, sans-serif' }}
             >
               Building systems that last and chasing ideas that matter. Drawn to{' '}
               <span className="text-orange-500 dark:text-orange-400 font-semibold">scale</span>, obsessed with{' '}

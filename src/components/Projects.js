@@ -70,11 +70,11 @@ export default function Projects() {
           className="text-center mb-16"
         >
           <h2 className="text-5xl font-bold text-gray-900 dark:text-white mb-4" 
-              style={{ fontFamily: 'Inter, system-ui, sans-serif' }}>
+              style={{ fontFamily: 'Fira Code, Inter, system-ui, sans-serif' }}>
             Projects
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-400 font-medium"
-             style={{ fontFamily: 'Inter, system-ui, sans-serif' }}>
+             style={{ fontFamily: 'Plus Jakarta Sans,Inter, system-ui, sans-serif' }}>
             Checkout my latest work
           </p>
         </motion.div>
@@ -124,12 +124,12 @@ export default function Projects() {
 
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3"
-                    style={{ fontFamily: 'Inter, system-ui, sans-serif' }}>
+                    style={{ fontFamily: 'Fira Code, Inter, system-ui, sans-serif' }}>
                   {project.title}
                 </h3>
                 
                 <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-4 font-medium"
-                   style={{ fontFamily: 'Inter, system-ui, sans-serif' }}>
+                   style={{ fontFamily: 'Plus Jakarta Sans, Inter, system-ui, sans-serif' }}>
                   {project.description}
                 </p>
 
