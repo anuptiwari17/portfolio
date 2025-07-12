@@ -10,7 +10,7 @@ const skills = [
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-20 bg-gray-50 dark:bg-gray-800/50">
+    <section id="skills" className="py-20">
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -19,14 +19,14 @@ export default function Skills() {
           viewport={{ once: true }}
           className="max-w-4xl mx-auto"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-8 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-8 text-center font-inter">
             Skills & Technologies
           </h2>
-          <p className="text-gray-600 dark:text-gray-300 text-center mb-12 max-w-lg mx-auto">
+          <p className="text-gray-600 dark:text-gray-300 text-center mb-12 max-w-lg mx-auto font-inter">
             Tools and technologies I work with on a daily basis
           </p>
 
-          <div className="flex flex-wrap justify-center gap-3">
+          <div className="flex flex-wrap justify-center gap-4">
             {skills.map((skill, index) => (
               <motion.div
                 key={skill}
@@ -34,16 +34,15 @@ export default function Skills() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ delay: index * 0.05, duration: 0.5 }}
                 viewport={{ once: true, margin: "-30px" }}
-                className="relative group"
+                className="relative group cursor-pointer"
               >
-                <div className="px-4 py-2 bg-white dark:bg-gray-700 rounded-md border border-gray-200 dark:border-gray-600 text-sm font-medium text-gray-700 dark:text-gray-300 flex items-center justify-center transition-all duration-300">
+                {/*glowing border effect*/}
+                <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-lg blur-sm opacity-70 animate-pulse"></div>
+                
+                {/*main skill tag*/}
+                <div className="relative px-5 py-2.5 bg-white dark:bg-gray-900 rounded-lg border border-gray-200 dark:border-gray-700 text-sm font-semibold text-gray-700 dark:text-gray-300 transition-all duration-300 hover:scale-105 font-inter tracking-wide">
                   {skill}
                 </div>
-                <motion.div 
-                  className="absolute inset-0 rounded-md border-2 border-transparent group-hover:border-orange-400/30 pointer-events-none transition-all duration-300"
-                  initial={{ opacity: 0 }}
-                  whileHover={{ opacity: 1 }}
-                />
               </motion.div>
             ))}
           </div>
@@ -55,7 +54,7 @@ export default function Skills() {
             viewport={{ once: true }}
             className="mt-12 text-center"
           >
-            <div className="inline-flex items-center text-sm text-gray-500 dark:text-gray-400 border-t border-gray-200 dark:border-gray-700 pt-4 px-4">
+            <div className="inline-flex items-center text-sm text-gray-500 dark:text-gray-400 border-t border-gray-200 dark:border-gray-700 pt-4 px-4 font-inter">
               <span>Continuously learning and adding new technologies</span>
             </div>
           </motion.div>

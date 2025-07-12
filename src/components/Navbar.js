@@ -8,27 +8,36 @@ import {
   Home, 
   User, 
   Code, 
-  Mail, 
   Sun, 
   Moon, 
   Github, 
   Linkedin, 
-  Twitter,
   Menu,
-  X
+  X as CloseIcon
 } from 'lucide-react'
 
 const navItems = [
   { name: 'Home', icon: Home, href: '#home' },
   { name: 'About', icon: User, href: '#about' },
   { name: 'Projects', icon: Code, href: '#projects' },
-  { name: 'Contact', icon: Mail, href: '#contact' },
 ]
+
+const TwitterXIcon = ({ size = 18, className = "" }) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    className={className}
+  >
+    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+  </svg>
+)
 
 const socialLinks = [
   { name: 'GitHub', icon: Github, href: 'https://github.com/anuptiwari17' },
   { name: 'LinkedIn', icon: Linkedin, href: 'https://linkedin.com/in/-anuptiwari' },
-  { name: 'Twitter', icon: Twitter, href: 'https://twitter.com/offsidetwt' },
+  { name: 'X', icon: TwitterXIcon, href: 'https://twitter.com/offsidetwt' },
 ]
 
 export default function Navbar() {
@@ -57,11 +66,11 @@ export default function Navbar() {
       >
         <div className="flex justify-center">
           <motion.div
-            className="glass-effect rounded-full px-4 py-2 shadow-xl"
+            className="glass-effect rounded-full px-8 py-2 shadow-xl"
             whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 300, damping: 30 }}
           >
-            <div className="flex items-center space-x-4">
+            <div className="flex items-center space-x-6">
               {/* Navigation Items */}
               {navItems.map((item) => (
                 <motion.button
