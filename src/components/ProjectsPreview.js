@@ -1,7 +1,8 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { ExternalLink, Github } from 'lucide-react'
+import { ExternalLink, Github, ArrowRight } from 'lucide-react'
+import Link from 'next/link'
 
 const projects = [
   {
@@ -58,7 +59,7 @@ const projects = [
   }
 ]
 
-export default function Projects() {
+export default function ProjectsPreview() {
   return (
     <section id="projects" className="py-24">
       <div className="max-w-6xl mx-auto px-6">
@@ -81,6 +82,11 @@ export default function Projects() {
 
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {projects.map((project, index) => (
+            <Link 
+              href={`/projects/${project.title.toLowerCase()}`} 
+              key={project.title}
+              passHref
+            >
             <motion.div
               key={project.title}
               initial={{ opacity: 0, y: 30 }}
@@ -158,8 +164,31 @@ export default function Projects() {
                 </div>
               </div>
             </motion.div>
+            </Link>
           ))}
         </div>
+
+         <motion.div
+  initial={{ opacity: 0, y: 20 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ delay: 0.4, duration: 0.6 }}
+  viewport={{ once: true }}
+  className="text-center mt-16"
+>
+  <div className="relative inline-block rounded-lg p-[2px] bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 group">
+  
+    <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 blur-sm opacity-70 group-hover:opacity-90 animate-pulse"></div>
+    
+    <Link
+      href="/projects"
+      className="relative flex items-center gap-2 px-6 py-3 bg-white dark:bg-gray-900 text-gray-900 dark:text-white rounded-[0.4rem] font-medium transition-all duration-300 group-hover:bg-opacity-90"
+    >
+      View All Projects
+      <ArrowRight className="group-hover:translate-x-1 transition-transform duration-300" size={18} />
+    </Link>
+  </div>
+</motion.div>
+
       </div>
     </section>
   )
