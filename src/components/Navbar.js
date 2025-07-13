@@ -18,9 +18,24 @@ import {
 } from 'lucide-react'
 
 const navItems = [
-  { name: 'Home', icon: Home, href: '#home' },
-  { name: 'About', icon: User, href: '#about' },
-  { name: 'Projects', icon: Code, href: '#projects' },
+  { 
+    name: 'Home', 
+    icon: Home, 
+    href: '/',
+    isAnchor: false
+  },
+  { 
+    name: 'About', 
+    icon: User, 
+    href: '#about',
+    isAnchor: true
+  },
+  { 
+    name: 'Projects', 
+    icon: Code, 
+    href: '/projects',
+    isAnchor: false
+  },
 ]
 
 const TwitterXIcon = ({ size = 18, className = "" }) => (
@@ -50,10 +65,14 @@ export default function Navbar() {
     setMounted(true)
   }, [])
 
-  const handleNavClick = (href) => {
-    document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' })
-    setIsMobileMenuOpen(false)
+  const handleNavClick = (item) => {
+  if (item.isAnchor && window.location.pathname === '/') {
+    document.querySelector(item.href)?.scrollIntoView({ behavior: 'smooth' })
+  } else {
+    window.location.href = item.isAnchor ? `/${item.href}` : item.href
   }
+  setIsMobileMenuOpen(false)
+}
 
   if (!mounted) return null
 
@@ -76,7 +95,7 @@ export default function Navbar() {
               {navItems.map((item) => (
                 <motion.button
                   key={item.name}
-                  onClick={() => handleNavClick(item.href)}
+                  onClick={() => handleNavClick(item)}
                   className="group relative flex items-center justify-center"
                   whileHover={{ y: -2 }}
                   whileTap={{ scale: 0.95 }}
