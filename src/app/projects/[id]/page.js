@@ -73,10 +73,10 @@ export default function ProjectDetailPage({ params }) {
           </p>
 
           <div className="flex flex-wrap gap-6 text-sm text-gray-500 dark:text-gray-400 mb-8">
-            <div className="flex items-center gap-2">
+            {/* <div className="flex items-center gap-2">
               <Calendar size={16} />
               <span>{project.duration}</span>
-            </div>
+            </div> */}
             <div className="flex items-center gap-2">
               <Users size={16} />
               <span>{project.team}</span>

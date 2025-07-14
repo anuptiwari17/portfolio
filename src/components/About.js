@@ -23,7 +23,7 @@ export default function Skills() {
         className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-8 text-center"
         style={{ fontFamily: "'Fira Code', 'Plus Jakarta Sans', 'Inter', sans-serif" }}
         >
-            Skills & Technologies
+            Skills
           </h2>
           <p className="text-gray-600 dark:text-gray-300 text-center mb-12 max-w-lg mx-auto" 
           style={{fontFamily: "'Plus Jakarta Sans', 'Inter', sans-serif"}}>

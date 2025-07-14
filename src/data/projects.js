@@ -13,7 +13,7 @@ export const projects = [
     liveLink: 'https://nucleoorg.vercel.app',
     githubLink: 'https://github.com/anuptiwari17/nucleo',
     category: 'Enterprise Software',
-    duration: '3 months',
+    duration: '1 week',
     team: 'Solo Project',
     status: 'Live',
     featured: true,
@@ -51,7 +51,7 @@ export const projects = [
     liveLink: 'https://cryptide.vercel.app',
     githubLink: 'https://github.com/anuptiwari17/cryptide',
     category: 'Financial Technology',
-    duration: '2 months',
+    duration: '2 days',
     team: 'Solo Project',
     status: 'Live',
     featured: true,
@@ -85,11 +85,11 @@ export const projects = [
       'Intelligent error resolution',
       'Automated testing workflows'
     ],
-    image: '/profile-pic.jpg',
+    image: '/glint.png',
     liveLink: 'https://glint-mocha.vercel.app',
     githubLink: 'https://github.com/anuptiwari17/glint',
     category: 'Developer Tools',
-    duration: '4 months',
+    duration: '1 week',
     team: 'Solo Project',
     status: 'Live',
     featured: true,
@@ -123,11 +123,11 @@ export const projects = [
       'Deep dive into raw memory, OOP, and exception safety',
       'Built for performance and efficiency'
     ],
-    image: '/profile-pic.jpg',
+    image: '/strix.png',
     liveLink: null,
     githubLink: 'https://github.com/anuptiwari17/strix',
     category: 'System Programming',
-    duration: '2 months',
+    duration: '1 week',
     team: 'Solo Project',
     status: 'Completed',
     featured: true,
@@ -150,7 +150,46 @@ export const projects = [
       'C++ best practices and patterns',
       'Algorithm optimization techniques'
     ]
-  }
+  },
+
+  {
+  id: 'skystats',
+  title: 'SkyStats',
+  description: 'Interactive weather analytics app with real-time and 5-day forecast visualizations using OpenWeatherMap API.',
+  technologies: ['HTML', 'CSS', 'JavaScript', 'Python', 'Flask', 'Matplotlib', 'Seaborn', 'Pandas'],
+  highlights: [
+    'Real-time weather data fetching via OpenWeatherMap API',
+    '5-day forecast at 3-hour intervals',
+    'Visualizations for temperature, humidity, pressure, and wind speed'
+  ],
+  image: '/skystats.png',
+  liveLink: 'https://skystats.onrender.com',
+  githubLink: 'https://github.com/anuptiwari17/weather-details',
+  category: 'Data Visualization',
+  duration: '2 days',
+  team: 'Solo Project',
+  status: 'Live',
+  featured: false,
+  overview: 'SkyStats is a weather dashboard application that fetches current weather and 5-day forecasts using the OpenWeatherMap API and presents the data visually using Python plotting libraries. It provides users with charts and graphs that represent changes in temperature, pressure, humidity, and wind speed over time.',
+  features: [
+    'Live weather data for any location',
+    '5-day forecast broken into 3-hour intervals',
+    'Interactive line and bar charts using Matplotlib and Seaborn',
+    'Backend powered by Flask for data handling',
+    'Responsive and user-friendly frontend'
+  ],
+  challenges: [
+    'Parsing and organizing 3-hour interval forecast data',
+    'Synchronizing Python-generated visualizations with frontend rendering',
+    'Ensuring clean and responsive design for all screen sizes'
+  ],
+  learnings: [
+    'Working with real-world APIs and data structures',
+    'Integrating Python visualizations in web apps',
+    'Full-stack development from scratch using Python and JS'
+  ]
+}
+
 ];
 
 //helper functions

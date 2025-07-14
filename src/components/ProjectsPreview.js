@@ -10,7 +10,7 @@ const projects = getFeaturedProjects()
 
 export default function ProjectsPreview() {
   return (
-    <section id="projects" className="py-24">
+    <section id="projects" className="py-18">
       <div className="max-w-6xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -53,7 +53,7 @@ export default function ProjectsPreview() {
               href="/projects"
               className="relative flex items-center gap-2 px-6 py-3 bg-white dark:bg-gray-900 text-gray-900 dark:text-white rounded-[0.4rem] font-medium transition-all duration-300 group-hover:bg-opacity-90"
             >
-              View All Projects
+              View More Projects
               <ArrowRight className="group-hover:translate-x-1 transition-transform duration-300" size={18} />
             </Link>
           </div>

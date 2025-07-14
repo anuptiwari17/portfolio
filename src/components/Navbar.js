@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import { useTheme } from 'next-themes'
 import { motion, AnimatePresence } from 'framer-motion'
+import { useRouter, usePathname } from 'next/navigation'
 
 
 import { 
@@ -14,7 +15,8 @@ import {
   Github, 
   Linkedin, 
   Menu,
-  X as CloseIcon
+  X as CloseIcon,
+  Mail
 } from 'lucide-react'
 
 const navItems = [
@@ -22,20 +24,30 @@ const navItems = [
     name: 'Home', 
     icon: Home, 
     href: '/',
-    isAnchor: false
+    isAnchor: false,
+    route: '/'
   },
   { 
     name: 'About', 
     icon: User, 
-    href: '#about',
-    isAnchor: true
+    href: '#skills',
+    isAnchor: true,
+    route:'/'
   },
   { 
     name: 'Projects', 
     icon: Code, 
     href: '/projects',
-    isAnchor: false
+    isAnchor: false,
+    route: '/projects'
   },
+  { 
+    name: 'Contact', 
+    icon: Mail, 
+    href: '#contact',
+    isAnchor: true,
+    route: '/'
+  }
 ]
 
 const TwitterXIcon = ({ size = 18, className = "" }) => (
@@ -50,7 +62,7 @@ const TwitterXIcon = ({ size = 18, className = "" }) => (
   </svg>
 )
 
-const socialLinks = [
+export const socialLinks = [
   { name: 'GitHub', icon: Github, href: 'https://github.com/anuptiwari17' },
   { name: 'LinkedIn', icon: Linkedin, href: 'https://linkedin.com/in/-anuptiwari' },
   { name: 'X', icon: TwitterXIcon, href: 'https://twitter.com/offsidetwt' },
@@ -60,25 +72,42 @@ export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [mounted, setMounted] = useState(false)
   const { theme, setTheme } = useTheme()
+  const router = useRouter()
+  const pathname = usePathname()
 
   useEffect(() => {
     setMounted(true)
   }, [])
 
   const handleNavClick = (item) => {
-  if (item.isAnchor && window.location.pathname === '/') {
-    document.querySelector(item.href)?.scrollIntoView({ behavior: 'smooth' })
+  if (pathname === item.route) {
+    
+    if (item.isAnchor) {
+      const element = document.querySelector(item.href)
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' })
+      }
+    }
   } else {
-    window.location.href = item.isAnchor ? `/${item.href}` : item.href
+  
+    router.push(item.route)
+
+    if (item.isAnchor) {
+      setTimeout(() => {
+        const element = document.querySelector(item.href)
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' })
+        }
+      }, 100)
+    }
   }
   setIsMobileMenuOpen(false)
 }
-
   if (!mounted) return null
 
   return (
     <>
-      {/* Desktop Navbar */}
+      {/*desktop navbar */}
       <motion.nav
         initial={{ y: -100 }}
         animate={{ y: 0 }}
@@ -90,7 +119,7 @@ export default function Navbar() {
             whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 300, damping: 30 }}
           >
-            <div className="flex items-center space-x-6">
+            <div className="flex items-center space-x-7">
               {/* Navigation Items */}
               {navItems.map((item) => (
                 <motion.button
@@ -181,7 +210,7 @@ export default function Navbar() {
         </motion.button>
       </motion.nav>
 
-      {/* Mobile Menu */}
+      {/*this is mobile menu */}
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.div
@@ -199,16 +228,16 @@ export default function Navbar() {
               <div className="space-y-4">
                 {navItems.map((item) => (
                   <motion.button
-                    key={item.name}
-                    onClick={() => handleNavClick(item.href)}
-                    className="flex items-center space-x-3 w-full text-left text-gray-700 dark:text-gray-300 hover:text-orange-500 dark:hover:text-orange-400 transition-colors"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
+                  key={item.name}
+                  onClick={() => handleNavClick(item)}
+                  className="flex items-center space-x-3 w-full text-left text-gray-700 dark:text-gray-300 hover:text-orange-500 dark:hover:text-orange-400 transition-colors"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
                   >
-                    <item.icon size={20} />
-                    <span className="font-medium">{item.name}</span>
-                  </motion.button>
-                ))}
+                <item.icon size={20} />
+                <span className="font-medium">{item.name}</span>
+              </motion.button>
+              ))}
 
                 <div className="h-px bg-gray-300 dark:bg-gray-600 my-4" />
 
