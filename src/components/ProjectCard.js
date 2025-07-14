@@ -20,7 +20,7 @@ export default function ProjectCard({ project, index = 0, linkTo, showTechLimit 
       className="group w-full max-w-md mx-auto bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-700 overflow-hidden shadow-sm hover:shadow-md hover:border-blue-300 dark:hover:border-blue-500 transition-all duration-300"
     >
       <div className="h-full flex flex-col">
-        <div className="relative aspect-video bg-gray-100 dark:bg-gray-800 overflow-hidden">
+        <div className="relative aspect-video bg-white dark:bg-black overflow-hidden">
           <Link href={linkTo || '#'} className="block h-full">
             <Image
               src={project.image}

@@ -34,11 +34,11 @@ export default function ProjectsPageSystem() {
           >
             <h1 className="text-5xl font-bold text-gray-900 dark:text-white mb-4" 
                 style={{ fontFamily: 'Fira Code, Inter, system-ui, sans-serif' }}>
-              All Projects
+              More Projects
             </h1>
             <p className="text-lg text-gray-600 dark:text-gray-400 font-medium"
                style={{ fontFamily: 'Plus Jakarta Sans,Inter, system-ui, sans-serif' }}>
-              Explore my complete portfolio of projects
+              Explore my portfolio of projects
             </p>
           </motion.div>
 
