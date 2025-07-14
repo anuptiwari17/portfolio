@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import { ExternalLink, Github } from 'lucide-react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function ProjectCard({ project, index = 0, linkTo, showTechLimit = 3 }) {
   const handleLinkClick = (e) => {
@@ -21,9 +22,12 @@ export default function ProjectCard({ project, index = 0, linkTo, showTechLimit 
       <div className="h-full flex flex-col">
         <div className="relative aspect-video bg-gray-100 dark:bg-gray-800 overflow-hidden">
           <Link href={linkTo || '#'} className="block h-full">
-            <img
+            <Image
               src={project.image}
               alt={project.title}
+              width={320}
+              height={320}
+              quality={100}
               className="w-full h-full object-cover rounded-t-xl transition-transform duration-300 group-hover:scale-[1.03]"
             />
           </Link>

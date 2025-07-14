@@ -40,7 +40,7 @@ export default function Contact() {
             className="text-lg text-gray-800 dark:text-gray-400"
             style={{ fontFamily: 'Plus Jakarta Sans, Inter, system-ui, sans-serif' }}
           >
-            Let's chat about code, design, or anything in between
+            Let&apos;s chat about code, design, or anything in between
           </p>
         </motion.div>
 

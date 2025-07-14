@@ -39,12 +39,12 @@ export default function Education() {
                 
                 <div className="flex items-center gap-4">
                   <div className="flex-shrink-0 relative">
-                    <div className="relative h-12 w-12 rounded-full overflow-hidden border border-gray-200 dark:border-gray-600 group-hover:border-blue-400 transition-colors duration-300">
+                    <div className="h-12 w-12 rounded-full overflow-hidden border border-gray-200 dark:border-gray-600 group-hover:border-blue-400 transition-colors duration-300">
                       <Image
                         src="/nitj.png"
                         alt="Dr B R National Institute of Technology"
-                        width={48}
-                        height={48}
+                        width={80}
+                        height={80}
                         className="object-cover"
                       />
                     </div>

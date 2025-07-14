@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { ArrowRight } from 'lucide-react'
+import Image from 'next/image'
 
 export default function Hero() {
   return (
@@ -21,10 +22,14 @@ export default function Hero() {
               transition={{ delay: 0.2, duration: 0.5 }}
               className="w-20 h-20 bg-gradient-to-br from-orange-400 to-red-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg overflow-hidden"
             >
-              <img 
+              
+              <Image 
                 src="/profile-pic.jpg" 
                 alt="Anup Tiwari" 
+                width={100}
+                height={100}
                 className="w-full h-full object-cover"
+                priority
               />
             </motion.div>
 

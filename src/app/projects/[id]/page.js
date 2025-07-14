@@ -6,6 +6,8 @@ import { motion } from 'framer-motion'
 import { ExternalLink, Github, ArrowLeft, Calendar, Code, Users, Star } from 'lucide-react'
 import Link from 'next/link'
 
+import Image from 'next/image'
+
 export default function ProjectDetailPage({ params }) {
     const { id } = use(params);
   const project = getProjectById(id);
@@ -120,10 +122,13 @@ export default function ProjectDetailPage({ params }) {
           className="mb-12"
         >
           <div className="aspect-video bg-gray-100 dark:bg-gray-800 rounded-2xl overflow-hidden">
-            <img
+            <Image
               src={project.image}
               alt={project.title}
+              width={640}
+              height={640}
               className="w-full h-full object-cover"
+              quality={100}
             />
           </div>
         </motion.div>
