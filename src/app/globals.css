@@ -9,6 +9,12 @@ html {
   scroll-behavior: smooth;
 }
 
+* {
+  caret-color: transparent;
+  @apply select-none;
+}
+
+
 body {
   font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
   transition: background-color 0.3s ease, color 0.3s ease;

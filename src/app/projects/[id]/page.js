@@ -7,8 +7,8 @@ import { ExternalLink, Github, ArrowLeft, Calendar, Code, Users, Star } from 'lu
 import Link from 'next/link'
 
 export default function ProjectDetailPage({ params }) {
-    const { id } = use(params)
-  const project = getProjectById(params.id)
+    const { id } = use(params);
+  const project = getProjectById(id);
   
   if (!project) {
     return (
@@ -31,7 +31,7 @@ export default function ProjectDetailPage({ params }) {
       transition={{ duration: 0.6 }}
       className="py-12 min-h-screen bg-gray-50 dark:bg-gray-900"
     >
-      <div className="max-w-4xl mx-auto px-6">
+      <div className="max-w-4xl mx-auto px-6 py-6">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}

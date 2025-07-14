@@ -23,8 +23,8 @@ const navItems = [
   { 
     name: 'Home', 
     icon: Home, 
-    href: '/',
-    isAnchor: false,
+    href: '#home',
+    isAnchor: true,
     route: '/'
   },
   { 

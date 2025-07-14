@@ -72,14 +72,15 @@ export default function Contact() {
                 </h3>
                 <motion.a
                   href="mailto:anuptiwari050@gmail.com"
-                  className="text-xl text-blue-600 dark:text-blue-400 font-mono hover:text-blue-500 dark:hover:text-blue-300 transition-colors"
+                  className="text-xl text-blue-600 dark:text-blue-400 font-mono hover:text-blue-500 dark:hover:text-blue-300 transition-colors select-text"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  anuptiwari050@gmail.com
+                anuptiwari050@gmail.com
                 </motion.a>
 
-                {/* Note */}
+
+                {/*note*/}
                 <p
                   className="mt-4 text-gray-700 dark:text-gray-400 text-sm"
                   style={{ fontFamily: 'Inter, system-ui, sans-serif' }}
@@ -87,7 +88,7 @@ export default function Contact() {
                   (I’m just a text away, and usually not too far from my keyboard.)
                 </p>
 
-                {/* Social Icons */}
+                {/*social icons*/}
                 <div className="mt-6 flex items-center gap-6">
                   {socials.map((link) => (
                     <motion.div
@@ -118,7 +119,7 @@ export default function Contact() {
                 </div>
               </div>
 
-              {/* Hover Overlay */}
+              {/*hover overlay*/}
               <div className="absolute inset-0 -z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-blue-900/10 to-black rounded-xl dark:from-blue-500/10 dark:to-gray-900"></div>
               </div>
