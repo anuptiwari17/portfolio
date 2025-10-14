@@ -1,4 +1,62 @@
 export const projects = [
+
+{
+  id: 'bilvens',
+  title: 'Bilvens LMS',
+  description: 'A modern, full-stack LMS built with Next.js, TypeScript, and Supabase. Developed end-to-end for Bilvens Technologies to deliver an enterprise-grade online learning experience with role-based dashboards, analytics, and real-time updates.',
+  technologies: [
+    'Next.js 14',
+    'TypeScript',
+    'Tailwind CSS',
+    'Shadcn/UI',
+    'Framer Motion',
+    'Supabase (PostgreSQL)',
+    'JWT Authentication',
+    'bcrypt.js',
+    'Lucide React'
+  ],
+  highlights: [
+    'Developed a complete LMS platform with separate interfaces for administrators and students',
+    'Implemented custom JWT authentication and role-based access system for secure multi-user workflows',
+    'Designed and normalized PostgreSQL schema using Supabase with efficient relationships and constraints',
+    'Integrated YouTube API for video modules with progress tracking and analytics',
+    'Built responsive, mobile-first UI with Tailwind CSS and Shadcn/UI, enhanced by Framer Motion animations',
+    'Implemented CSV export, announcement broadcasting, and real-time progress tracking using Supabase APIs',
+    'Adopted modern TypeScript, ESLint, Prettier, and reusable React component architecture',
+    'Wrote detailed documentation for folder structure, schema design, and setup instructions'
+  ],
+  image: '/bilvens.png',
+  liveLink: 'https://bilvens.vercel.app',
+  githubLink: 'Private Repository (Proprietary Project)',
+  category: 'Education Technology',
+  duration: 'Jan 2025 – Apr 2025',
+  team: 'Freelance Contract (Solo Development)',
+  status: 'Live',
+  featured: true,
+  overview: 'Bilvens LMS is a full-stack Learning Management System built for Bilvens Technologies. It features a complete admin–student ecosystem with secure authentication, course management, analytics dashboards, and real-time progress tracking.',
+  features: [
+    'Admin and Student dashboards with role-based access control',
+    'Course and module management with YouTube video integration',
+    'Real-time progress tracking and announcement system',
+    'CSV export and analytics dashboard for admins',
+    'Responsive, mobile-first design with smooth UI animations',
+    'JWT-based authentication and secure password hashing'
+  ],
+  challenges: [
+    'Designing scalable database schema with relational consistency',
+    'Implementing custom authentication flow outside Supabase Auth',
+    'Optimizing for responsiveness and performance across devices'
+  ],
+  learnings: [
+    'Advanced Next.js App Router and API Routes',
+    'PostgreSQL schema design and Supabase integration',
+    'Real-time updates and role-based access control'
+  ],
+  impact:
+    'Delivered a production-ready LMS platform that helped Bilvens digitize their training operations for over 500 users with robust backend security, a clean UI, and scalable architecture.'
+},
+
+
   {
     id: 'nucleo',
     title: 'Nucleo',
@@ -110,7 +168,7 @@ export const projects = [
     learnings: [
       'AI integration in web applications',
       'Complex state management patterns',
-      'Advanced Next.js features'
+      'Advanced React.js features'
     ]
   },
   {
@@ -130,7 +188,7 @@ export const projects = [
     duration: '1 week',
     team: 'Solo Project',
     status: 'Completed',
-    featured: true,
+    featured: false,
     overview: 'Strix is a lightweight, zero-dependency string library implemented in C++ from scratch, focusing on performance and memory efficiency.',
     features: [
       'Zero external dependencies',
@@ -150,46 +208,7 @@ export const projects = [
       'C++ best practices and patterns',
       'Algorithm optimization techniques'
     ]
-  },
-
-  {
-  id: 'skystats',
-  title: 'SkyStats',
-  description: 'Interactive weather analytics app with real-time and 5-day forecast visualizations using OpenWeatherMap API.',
-  technologies: ['HTML', 'CSS', 'JavaScript', 'Python', 'Flask', 'Matplotlib', 'Seaborn', 'Pandas'],
-  highlights: [
-    'Real-time weather data fetching via OpenWeatherMap API',
-    '5-day forecast at 3-hour intervals',
-    'Visualizations for temperature, humidity, pressure, and wind speed'
-  ],
-  image: '/skystats.png',
-  liveLink: 'https://skystats.onrender.com',
-  githubLink: 'https://github.com/anuptiwari17/weather-details',
-  category: 'Data Visualization',
-  duration: '2 days',
-  team: 'Solo Project',
-  status: 'Live',
-  featured: false,
-  overview: 'SkyStats is a weather dashboard application that fetches current weather and 5-day forecasts using the OpenWeatherMap API and presents the data visually using Python plotting libraries. It provides users with charts and graphs that represent changes in temperature, pressure, humidity, and wind speed over time.',
-  features: [
-    'Live weather data for any location',
-    '5-day forecast broken into 3-hour intervals',
-    'Interactive line and bar charts using Matplotlib and Seaborn',
-    'Backend powered by Flask for data handling',
-    'Responsive and user-friendly frontend'
-  ],
-  challenges: [
-    'Parsing and organizing 3-hour interval forecast data',
-    'Synchronizing Python-generated visualizations with frontend rendering',
-    'Ensuring clean and responsive design for all screen sizes'
-  ],
-  learnings: [
-    'Working with real-world APIs and data structures',
-    'Integrating Python visualizations in web apps',
-    'Full-stack development from scratch using Python and JS'
-  ]
-}
-
+  }
 ];
 
 //helper functions
