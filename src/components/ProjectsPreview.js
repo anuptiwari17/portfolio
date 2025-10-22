@@ -29,7 +29,7 @@ export default function ProjectsPreview() {
           </p>
         </motion.div>
 
-        <div className="space-y-8 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {projects.map((project, index) => (
             <ProjectCard
               key={project.id}
