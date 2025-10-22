@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { getAllExperiences } from '@/data/Experience'
+import { getAllExperiences } from '@/data/experience'
 
 export default function Experience() {
   const experiences = getAllExperiences()
