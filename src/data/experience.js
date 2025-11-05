@@ -4,7 +4,7 @@ const experiences = [
   {
     id: 'bilvens-2025',
     company: 'Bilvens Technology',
-    role: 'Software Engineer Intern',
+    role: 'Freelance Software Engineer',
     duration: 'Sep 2025 - Oct 2025',
     type: 'Remote',
     description: [
@@ -24,7 +24,6 @@ const experiences = [
       'Docker',
       'Shadcn/ui'
     ]
-    
   }
 ]
 
