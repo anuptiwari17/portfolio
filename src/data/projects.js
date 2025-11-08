@@ -171,7 +171,7 @@ export const projects = [
     duration: '1 week',
     team: 'Solo Project',
     status: 'Completed',
-    featured: true,
+    featured: false,
     overview: 'Strix is a lightweight, zero-dependency string library implemented in C++ from scratch, focusing on performance and memory efficiency.',
     features: [
       'Zero external dependencies',
