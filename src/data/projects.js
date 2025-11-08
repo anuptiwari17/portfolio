@@ -37,6 +37,47 @@ export const projects = [
       'Real-time application architecture'
     ]
   },
+
+  {
+  id: 'sam',
+  title: 'SAM',
+  description: 'A sleek, dark-themed Software Asset Management platform frontend focused on premium UI and motion design.',
+  technologies: ['React.js', 'Framer Motion', 'GSAP', 'Tailwind CSS', 'Lucide-React'],
+  highlights: [
+    'Dark-themed premium UI design',
+    'Smooth page transitions and animations',
+    'Built with GSAP and Framer Motion',
+  ],
+  image: '/sam.png',
+  liveLink: 'https://samorg.vercel.app',
+  githubLink: 'https://github.com/anuptiwari17',
+  category: 'Frontend Development',
+  duration: '2 days',
+  team: 'Solo Project',
+  status: 'Live',
+  featured: true,
+  overview: 'SAM (Software Asset Management) is a frontend-only platform concept that showcases a premium dark UI experience with smooth animations and transitions. Built with modern frontend technologies, it emphasizes visual polish and performance over backend complexity.',
+  features: [
+    'Responsive dark-themed UI design',
+    'Smooth GSAP-based animations and transitions',
+    'Framer Motion for interactive UI elements',
+    'Multi-page React application',
+    'Lucide-React icons for clean visual hierarchy',
+    'Performance-optimized animations',
+  ],
+  challenges: [
+    'Creating smooth yet performant animations',
+    'Synchronizing GSAP and Framer Motion together',
+    'Maintaining consistency across multiple pages in a dark theme',
+  ],
+  learnings: [
+    'Framer Motion animation patterns',
+    'GSAP timeline synchronization',
+    'Building performant, visually-rich UIs',
+  ],
+},
+
+
   {
     id: 'cryptide',
     title: 'Cryptide',
