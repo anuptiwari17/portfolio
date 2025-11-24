@@ -19,7 +19,7 @@ export default function Footer() {
             <span> Anup Tiwari</span>
             <span className="mx-2">•</span>
             <span className="flex items-center">
-              Made with <Heart className="mx-1 text-red-500" size={14} /> and ☕
+              Made with <Heart className="mx-1 text-red-500" size={14} />
             </span>
           </div>
           

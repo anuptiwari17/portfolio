@@ -1,3 +1,5 @@
+// src/data/projects.js
+
 export const projects = [
   {
     id: 'nucleo',
@@ -39,44 +41,63 @@ export const projects = [
   },
 
   {
-  id: 'sam',
-  title: 'SAM',
-  description: 'A sleek, dark-themed Software Asset Management platform frontend focused on premium UI and motion design.',
-  technologies: ['React.js', 'Framer Motion', 'GSAP', 'Tailwind CSS', 'Lucide-React'],
-  highlights: [
-    'Dark-themed premium UI design',
-    'Smooth page transitions and animations',
-    'Built with GSAP and Framer Motion',
-  ],
-  image: '/sam.png',
-  liveLink: 'https://samorg.vercel.app',
-  githubLink: 'https://github.com/anuptiwari17',
-  category: 'Frontend Development',
-  duration: '2 days',
-  team: 'Solo Project',
-  status: 'Live',
-  featured: true,
-  overview: 'SAM (Software Asset Management) is a frontend-only platform concept that showcases a premium dark UI experience with smooth animations and transitions. Built with modern frontend technologies, it emphasizes visual polish and performance over backend complexity.',
-  features: [
-    'Responsive dark-themed UI design',
-    'Smooth GSAP-based animations and transitions',
-    'Framer Motion for interactive UI elements',
-    'Multi-page React application',
-    'Lucide-React icons for clean visual hierarchy',
-    'Performance-optimized animations',
-  ],
-  challenges: [
-    'Creating smooth yet performant animations',
-    'Synchronizing GSAP and Framer Motion together',
-    'Maintaining consistency across multiple pages in a dark theme',
-  ],
-  learnings: [
-    'Framer Motion animation patterns',
-    'GSAP timeline synchronization',
-    'Building performant, visually-rich UIs',
-  ],
-},
+    id: 'bilvens',
+    title: 'Bilvens',
+    description: 'Full-stack Learning Management System for a real client — real-time course tracking, admin/student roles, video modules, and analytics.',
+    technologies: ['Next.js', 'TypeScript', 'Supabase', 'PostgreSQL', 'Tailwind CSS', 'Framer Motion', 'JWT', 'Docker', 'Shadcn/ui'],
+    highlights: [
+      'Served hundreds of real students',
+      'Complete role-based system (Admin / Instructor / Student)',
+      'Video lessons + progress tracking + CSV exports'
+    ],
+    image: '/bilvens.png',
+    liveLink: "https://lms.examate.in",
+    githubLink: '#',
+    category: 'Client Project',
+    duration: 'Sep – Oct 2025',
+    team: 'Freelance • Bilvens Technology',
+    status: 'Completed & Delivered',
+    featured: true,
+    overview: 'Production-grade Learning Management System built from scratch for Bilvens Technology. Includes secure authentication, real-time student progress, course creation tools, video hosting, and detailed analytics dashboards.',
+    features: [
+      'Role-based authentication & dashboards',
+      'Real-time course progress & analytics',
+      'Video module upload & streaming',
+      'CSV report generation',
+      'Mobile-first responsive design',
+      'Modern UI with Shadcn/ui + Tailwind'
+    ],
+    challenges: [
+      'Scalable real-time progress tracking',
+      'Secure video & file handling',
+      'Complex multi-role permission system'
+    ],
+    learnings: [
+      'Production Next.js 14 + Supabase stack',
+      'Advanced TypeScript in large apps',
+      'Client delivery & deadline management'
+    ]
+  },
 
+  {
+    id: 'aniva',
+    title: 'Aniva',
+    description: 'A sleek, dark-themed Software Asset Management platform frontend focused on premium UI and motion design.',
+    technologies: ['React.js', 'Framer Motion', 'GSAP', 'Tailwind CSS', 'Lucide-React'],
+    highlights: [
+      'Dark-themed premium UI design',
+      'Smooth page transitions and animations',
+      'Built with GSAP and Framer Motion'
+    ],
+    image: '/aniva.png',
+    liveLink: 'https://samorg.vercel.app',
+    githubLink: 'https://github.com/anuptiwari17',
+    category: 'Client Project',
+    duration: '2 days',
+    team: 'Solo Project',
+    status: 'Live',
+    featured: true,
+  },
 
   {
     id: 'cryptide',
@@ -96,26 +117,8 @@ export const projects = [
     team: 'Solo Project',
     status: 'Live',
     featured: true,
-    overview: 'Cryptide is a modern cryptocurrency tracking platform that provides real-time market data, news, and analytics for the top 100 cryptocurrencies.',
-    features: [
-      'Real-time cryptocurrency price tracking',
-      'Interactive charts and graphs',
-      'Latest crypto news aggregation',
-      'Portfolio tracking capabilities',
-      'Market analysis tools',
-      'Mobile-responsive design'
-    ],
-    challenges: [
-      'Handling multiple API integrations',
-      'Managing real-time data updates',
-      'Creating performant chart visualizations'
-    ],
-    learnings: [
-      'API integration and data management',
-      'Chart.js for data visualization',
-      'Performance optimization techniques'
-    ]
   },
+
   {
     id: 'glint',
     title: 'Glint',
@@ -133,34 +136,16 @@ export const projects = [
     duration: '1 week',
     team: 'Solo Project',
     status: 'Live',
-    featured: true,
-    overview: 'Glint is an AI-powered API testing platform that combines the familiar interface of Postman with intelligent error analysis and automated testing workflows.',
-    features: [
-      'Postman-like API testing interface',
-      'AI-powered error analysis',
-      'Automated testing workflows',
-      'Intelligent debugging suggestions',
-      'Request/response history',
-      'Export and import capabilities'
-    ],
-    challenges: [
-      'Integrating AI for error analysis',
-      'Building complex testing workflows',
-      'Creating intuitive user interface'
-    ],
-    learnings: [
-      'AI integration in web applications',
-      'Complex state management patterns',
-      'Advanced Next.js features'
-    ]
+    featured: false,
   },
+
   {
     id: 'strix',
     title: 'Strix',
     description: 'A Zero-Dependency Lightweight String Library in C++',
     technologies: ['C++'],
     highlights: [
-      'Zero dependency (no standard strings functions used)',
+      'Zero dependency (no standard string functions used)',
       'Deep dive into raw memory, OOP, and exception safety',
       'Built for performance and efficiency'
     ],
@@ -172,72 +157,31 @@ export const projects = [
     team: 'Solo Project',
     status: 'Completed',
     featured: false,
-    overview: 'Strix is a lightweight, zero-dependency string library implemented in C++ from scratch, focusing on performance and memory efficiency.',
-    features: [
-      'Zero external dependencies',
-      'Custom memory management',
-      'Exception-safe operations',
-      'Performance-optimized algorithms',
-      'Comprehensive test suite',
-      'Cross-platform compatibility'
-    ],
-    challenges: [
-      'Manual memory management',
-      'Implementing string algorithms from scratch',
-      'Ensuring exception safety'
-    ],
-    learnings: [
-      'Low-level memory management',
-      'C++ best practices and patterns',
-      'Algorithm optimization techniques'
-    ]
   },
 
   {
-  id: 'skystats',
-  title: 'SkyStats',
-  description: 'Interactive weather analytics app with real-time and 5-day forecast visualizations using OpenWeatherMap API.',
-  technologies: ['HTML', 'CSS', 'JavaScript', 'Python', 'Flask', 'Matplotlib', 'Seaborn', 'Pandas'],
-  highlights: [
-    'Real-time weather data fetching via OpenWeatherMap API',
-    '5-day forecast at 3-hour intervals',
-    'Visualizations for temperature, humidity, pressure, and wind speed'
-  ],
-  image: '/skystats.png',
-  liveLink: 'https://skystats.onrender.com',
-  githubLink: 'https://github.com/anuptiwari17/weather-details',
-  category: 'Data Visualization',
-  duration: '2 days',
-  team: 'Solo Project',
-  status: 'Live',
-  featured: false,
-  overview: 'SkyStats is a weather dashboard application that fetches current weather and 5-day forecasts using the OpenWeatherMap API and presents the data visually using Python plotting libraries. It provides users with charts and graphs that represent changes in temperature, pressure, humidity, and wind speed over time.',
-  features: [
-    'Live weather data for any location',
-    '5-day forecast broken into 3-hour intervals',
-    'Interactive line and bar charts using Matplotlib and Seaborn',
-    'Backend powered by Flask for data handling',
-    'Responsive and user-friendly frontend'
-  ],
-  challenges: [
-    'Parsing and organizing 3-hour interval forecast data',
-    'Synchronizing Python-generated visualizations with frontend rendering',
-    'Ensuring clean and responsive design for all screen sizes'
-  ],
-  learnings: [
-    'Working with real-world APIs and data structures',
-    'Integrating Python visualizations in web apps',
-    'Full-stack development from scratch using Python and JS'
-  ]
-}
-
+    id: 'skystats',
+    title: 'SkyStats',
+    description: 'Interactive weather analytics app with real-time and 5-day forecast visualizations using OpenWeatherMap API.',
+    technologies: ['HTML', 'CSS', 'JavaScript', 'Python', 'Flask', 'Matplotlib', 'Seaborn', 'Pandas'],
+    highlights: [
+      'Real-time weather data fetching via OpenWeatherMap API',
+      '5-day forecast at 3-hour intervals',
+      'Visualizations for temperature, humidity, pressure, and wind speed'
+    ],
+    image: '/skystats.png',
+    liveLink: 'https://skystats.onrender.com',
+    githubLink: 'https://github.com/anuptiwari17/weather-details',
+    category: 'Data Visualization',
+    duration: '2 days',
+    team: 'Solo Project',
+    status: 'Live',
+    featured: false,
+  }
 ];
 
-//helper functions
-export const getFeaturedProjects = () => projects.filter(project => project.featured);
-
+// Helper functions
+export const getFeaturedProjects = () => projects.filter(p => p.featured);
 export const getAllProjects = () => projects;
-
-export const getProjectById = (id) => projects.find(project => project.id === id);
-
-export const getProjectsByCategory = (category) => projects.filter(project => project.category === category);
+export const getProjectById = (id) => projects.find(p => p.id === id);
+export const getProjectsByCategory = (category) => projects.filter(p => p.category === category);

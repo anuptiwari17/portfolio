@@ -21,7 +21,7 @@ export default function ProjectsPreview() {
         >
           <h2 className="text-5xl font-bold text-gray-900 dark:text-white mb-4" 
               style={{ fontFamily: 'Fira Code, Inter, system-ui, sans-serif' }}>
-            Projects
+            Work
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-400 font-medium"
              style={{ fontFamily: 'Plus Jakarta Sans,Inter, system-ui, sans-serif' }}>
